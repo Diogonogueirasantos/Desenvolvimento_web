@@ -1,0 +1,83 @@
+/*formatações globais*/
+
+@charset "utf8";
+
+*{
+    margin:auto;
+}
+
+body{
+   background:#f0f0f0;
+   font-family:"body";
+}
+
+/*Importação de fonts e paletas*/
+
+@font-face {
+    font-family:"body";
+    src: url("fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf")format("truetype") ;
+}
+
+@font-face {
+    font-family: "title";
+    src: url("fonts/Bebas_Neue/BebasNeue-Regular.ttf") format("truetype");
+}
+
+:root{
+    --primeira:#1F12FB;
+    --segunda:#665EFF;
+    --terceira:#1D11F5;
+    --quarta:#2F2B75;
+    --quinta:#1F12FB;
+}
+
+
+/*Formatações para cabeçalho*/
+
+header{
+    background-image:linear-gradient(to right, var(--primeira), var(--segunda), var(--terceira));
+    text-align: center;
+    padding:10px;
+    font-family:"title";
+    color: #fff;
+    display:flex;
+    flex-direction:column;
+}
+
+header > h1{
+    font-size:2.6em;
+    text-shadow:1px 1px 1px #000;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+header a:hover{
+    background: var(--quinta);
+    color: var(--segunda);
+}
+
+/*Formatações gerais*/
+
+main{
+    background:#fff;
+    box-shadow:1px 1px 1px #000;
+    width:500px;
+    margin-top:10px;
+    display:flex;
+    flex-direction:column;
+}
+
+main > h1{
+    background:var(--quarta);
+    color: #fff;
+    padding-left:10px;
+}
+
+main p{
+    text-indent: 8px;
+    padding-left:10px;
+}
